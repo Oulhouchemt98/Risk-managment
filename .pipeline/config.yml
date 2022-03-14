@@ -13,17 +13,16 @@
 ### General project setup
 general:
   inferBuildTool: true
-
-Build: 
-    mavenExecuteStaticCodeChecks: false 
-    npmExecuteLint: false 
-  Additional Unit Tests: 
-    npmExecuteScripts: false
-    karmaExecuteTests: false
-Release:
-  cloudFoundryDeploy : true
-  tmsUpload : true
-
+  
+  Build: 
+      mavenExecuteStaticCodeChecks: false 
+      npmExecuteLint: false 
+    Additional Unit Tests: 
+      npmExecuteScripts: false
+      karmaExecuteTests: false
+  Release:
+    cloudFoundryDeploy : true
+    tmsUpload : true
 
 Steps:
   cloudFoundryDeploy:
@@ -31,7 +30,7 @@ Steps:
       apiEndpoint: "https://api.cf.us10.hana.ondemand.com"
       org: 2cfdaeb2trial
       space: "dev"
-      credentialsId: "myDeploymentCredentlialsId" #set this to 'cfdeploy'
+      credentialsId: "cfdeploy" #set this to 'cfdeploy'
       appName: ""
     mtDeployParameters: "-f --version-rule ALL"
   artifactPrepareVersion:
