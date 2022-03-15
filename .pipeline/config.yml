@@ -12,8 +12,8 @@
 
 ### General project setup
 general:
-  inferBuildTool: true
-  
+    projectName: 'Risk-management'
+    productiveBranch: 'main'
   Build: 
       mavenExecuteStaticCodeChecks: false 
       npmExecuteLint: false 
