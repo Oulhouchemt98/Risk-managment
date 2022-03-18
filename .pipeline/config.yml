@@ -27,9 +27,9 @@ general:
 Steps:
   cloudFoundryDeploy:
     cloudFoundry:
-      apiEndpoint: "https://api.cf.us10.hana.ondemand.com"
-      org: 2cfdaeb2trial
-      space: "dev"
+      apiEndpoint: ""
+      org: 
+      space: ""
       credentialsId: "cfdeploy" #set this to 'cfdeploy'
       appName: ""
     mtDeployParameters: "-f --version-rule ALL"
